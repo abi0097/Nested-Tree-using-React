@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "ABC pvt.ltd",
+    "address": "5/67, ABC street, velachery, Chennai, 600042",
+    "mobile": "02223685364"
+  },
+  {
+    "id": 2,
+    "title": "DEF pvt.ltd",
+    "address": "3/33 , ABC street, velachery, Chennai, 600042",
+    "mobile": "01254733554"
+  },
+  {
+    "id": 3,
+    "title": "GHI pvt.ltd",
+    "address": "6/23 GHI street, Chennai, 600007 ",
+    "mobile": "88888685364"
+  },
+  {
+    "id": 4,
+    "title": "JKL  pvt.ltd",
+    "address": "12/25 JKL street ,  Chennai   , 600007 ",
+    "mobile": "02223685364"
+  },
+  {
+    "id": 5,
+    "title": "MNO pvt.ltd",
+    "address": "8/21 MNO street  , Chennai   , 600007 ",
+    "mobile": "111685364"
+  },
+  {
+    "id": 6,
+    "title": "PQR pvt.ltd",
+    "address": "12/59 PQR street  , Chennai   , 600007 ",
+    "mobile": "02223685364"
+  },
+  {
+    "id": 7,
+    "title": "STU pvt.ltd",
+    "address": "14/25 STU street  , Chennai   , 600007 ",
+    "mobile": "777785664"
+  },
+  {
+    "id": 8,
+    "title": "VWX pvt.ltd",
+    "address": "3/23 VWX street  , Chennai   , 600007 ",
+    "mobile": "985285364"
+  },
+  {
+    "id": 9,
+    "title": "YZ1 pvt.ltd",
+    "address": " 3/77 YZ1 street  , Chennai   , 600007 ",
+    "mobile": "999582364"
+  },
+  {
+    "id": 10,
+    "title": "123 pvt.ltd",
+    "address": "1/33  street  , Chennai   , 600007 ",
+    "mobile": "985285364"
+  }
+]
