@@ -9,10 +9,10 @@ function Table() {
   console.log("param", param.id);
   console.log("data", data);
 
-  const employeeRecord = data.filter((d) => d.companyId == param.id);
+  const employeeRecord = data.filter((d) => d.companyId === Number(param.id));
 
   console.log("employeeRecord", employeeRecord);
-  const company = companyData.find((d) => d.id == param.id);
+  const company = companyData.find((d) => d.id === Number(param.id));
   return (
     <div>
       <div className="Header">{company?.title}</div>
