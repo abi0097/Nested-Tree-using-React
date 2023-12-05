@@ -3,60 +3,150 @@
     "id": 1,
     "title": "ABC pvt.ltd",
     "address": "5/67, ABC street, velachery, Chennai, 600042",
-    "mobile": "02223685364"
+    "poc": [
+      {
+        "name": " Ben Alen",
+        "mobile": "02223685364"
+      },
+      {
+        "name": "Ram",
+        "mobile": "7338929290"
+      }
+    ]
   },
   {
     "id": 2,
     "title": "DEF pvt.ltd",
     "address": "3/33 , ABC street, velachery, Chennai, 600042",
-    "mobile": "01254733554"
+    "poc": [
+      {
+        "name": "Danial",
+        "mobile": "3456890023"
+      },
+      {
+        "name": "Kohli",
+        "mobile": "181818181818"
+      }
+    ]
   },
   {
     "id": 3,
     "title": "GHI pvt.ltd",
     "address": "6/23 GHI street, Chennai, 600007 ",
-    "mobile": "88888685364"
+    "poc": [
+      {
+        "name": "Rohit",
+        "mobile": "02223685364"
+      },
+      {
+        "name": "Ram",
+        "mobile": "84848398493"
+      }
+    ]
   },
   {
     "id": 4,
     "title": "JKL  pvt.ltd",
     "address": "12/25 JKL street ,  Chennai   , 600007 ",
-    "mobile": "02223685364"
+    "poc": [
+      {
+        "name": "Durai",
+        "mobile": "9383893849"
+      },
+      {
+        "name": "Angel",
+        "mobile": "7893321785"
+      }
+    ]
   },
   {
     "id": 5,
     "title": "MNO pvt.ltd",
     "address": "8/21 MNO street  , Chennai   , 600007 ",
-    "mobile": "111685364"
+    "poc": [
+      {
+        "name": "Stella",
+        "mobile": "98765403022"
+      },
+      {
+        "name": "Amir",
+        "mobile": "8989567422"
+      }
+    ]
   },
   {
     "id": 6,
     "title": "PQR pvt.ltd",
     "address": "12/59 PQR street  , Chennai   , 600007 ",
-    "mobile": "02223685364"
+    "poc": [
+      {
+        "name": "Javeed",
+        "mobile": "98432218583"
+      },
+      {
+        "name": "Kishore",
+        "mobile": "02223685364"
+      }
+    ]
   },
   {
     "id": 7,
     "title": "STU pvt.ltd",
     "address": "14/25 STU street  , Chennai   , 600007 ",
-    "mobile": "777785664"
+    "poc": [
+      {
+        "name": "Ram",
+        "mobile": "9877899876"
+      },
+      {
+        "name": "Libi",
+        "mobile": "8787665432"
+      }
+    ]
   },
   {
     "id": 8,
     "title": "VWX pvt.ltd",
     "address": "3/23 VWX street  , Chennai   , 600007 ",
-    "mobile": "985285364"
+    "poc": [
+      {
+        "name": "Esther",
+        "mobile": "7687868976"
+      },
+      {
+        "name": "Ragul",
+        "mobile": "9219234532"
+      }
+    ]
   },
   {
     "id": 9,
     "title": "YZ1 pvt.ltd",
     "address": " 3/77 YZ1 street  , Chennai   , 600007 ",
-    "mobile": "999582364"
+    "poc": [
+      {
+        "name": "Vishnu",
+        "mobile": "8848484848"
+      },
+      {
+        "name": "Bharath",
+        "mobile": "9193945959"
+      }
+    ]
   },
   {
     "id": 10,
     "title": "123 pvt.ltd",
     "address": "1/33  street  , Chennai   , 600007 ",
-    "mobile": "985285364"
+    "poc": [
+      {
+        "name": "Danial",
+        "mobile": "02223685364"
+      },
+      {
+        "name": "Lishan",
+        "mobile": "98769898932"
+      }
+    ]
   }
 ]

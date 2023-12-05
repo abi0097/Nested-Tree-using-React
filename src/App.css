@@ -4,116 +4,64 @@
   box-sizing: border-box;
 }
 
-.card {
-  width: 18rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  margin: 10px;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: #fafafa;
+/* Nested.css */
+details {
+  margin-bottom: 10px;
 }
 
-.card-title {
-  width: 100%;
-  object-fit: cover;
-  padding: 15px 0px;
+summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.parent-summary::before {
+  content: '\2212'; /* Minus sign when closed */
+  display: inline-block;
+  width: 1em;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
 }
 
-.card-address {
-  padding: 10px 0px;
-}
-.card-body {
-  color: white;
-  padding: 10px;
-  background: rgb(105, 81, 255);
-  font-family: sans-serif;
-  border: 2px solid rgb(105, 81, 255);
-  border-radius: 10px;
+.parent.open .parent-summary::before {
+  content: '\002B'; /* Plus sign when open */
 }
 
-.card-text {
-  line-height: 2;
+.child-summary::before {
+  content: '\2212'; /* Minus sign when closed */
+  display: inline-block;
+  width: 1em;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(220, 220, 224)); */
+.child.open .child-summary::before {
+  content: '\002B'; /* Plus sign when open */
 }
 
-.card-phone {
-  margin: 15px 0px;
+.grandchild-summary::before {
+  content: '\2212'; /* Minus sign when closed */
+  display: inline-block;
+  width: 1em;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
 }
-.App {
-  /* width: 100%; */
-  color: rgb(0, 0, 0);
-  padding: 20px;
-  background: rgb(227, 226, 235);
-  font-family: sans-serif;
-  /* border: 2px solid rgb(105, 81, 255); */
-  border-radius: 10px;
-  margin: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+
+.grandchild:not(.open) .grandchild-summary::before {
+  content: '\002B'; /* Plus sign when open */
 }
-.content {
-  font-size: 1em;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #faf9f6;
+
+/* Hide arrow head when closed */
+.parent-summary:not(.open)::before,
+.child-summary:not(.open)::before,
+.grandchild-summary:not(.open)::before {
+  display: none;
 }
-.Header {
-  width: 50%;
-  height: 50px;
-  background-color: #ffff;
-  text-align: start;
-  padding: 5px;
-  margin: 20px 20px 20px 60px;
-  color: rgb(128, 138, 153);
-  font-size: 3em;
-}
-.table {
-  display: block;
-  overflow: visible;
-  table-layout: auto;
-  /* border: 1px solid #5c5b5b; */
-  border-collapse: collapse;
-  white-space: nowrap;
-  width: 100em;
-  max-width: 90%;
-  margin: auto;
-  overflow-x: auto;
-}
-.table thead {
+
+
+.header-color{
+  color:#000000;
   background-color: #d2dfff;
-  color: #222;
-  overflow: hidden;
+  font-size: 1.4em;
 }
 
-.table th,
-.table td {
-  padding: 0.8rem;
-}
-
-.table td {
-  border-top: 0.5px solid #ddd;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.table tbody tr:hover {
-  background-color: #eee;
-}
-.name {
-  text-align: center;
-}
-.t-head {
-  color: rgb(128, 138, 153);
-}
