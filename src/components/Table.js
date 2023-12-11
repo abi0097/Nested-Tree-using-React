@@ -6,33 +6,32 @@ import companyData from "../data/company.json";
 import { useParams } from "react-router-dom";
 
 const columns = [
-  { field: "id", headerName: "ID", width: 80, headerClassName: "header-color" },
+  { field: "id", headerName: "ID", width: 60, headerClassName: "header-color" },
   {
     field: "name",
     headerName: "First Name",
     headerClassName: "header-color",
     width: 150,
     editable: true,
-    
   },
   {
     field: "role",
     headerName: "Role",
     sortable: true,
-    width: 150,
+    width: 100,
     headerClassName: "header-color",
   },
   {
     field: "dob",
     headerName: "Date of Birth",
-    width: 180,
+    width: 150,
     editable: false,
     headerClassName: "header-color",
   },
   {
     field: "age",
     headerName: "Age",
-    width: 100,
+    width: 80,
     editable: true,
     headerClassName: "header-color",
   },
@@ -49,7 +48,7 @@ const columns = [
     field: "email",
     headerName: "Email",
     headerClassName: "header-color",
-    width: 200,
+    width: 170,
   },
   {
     field: "experience",
@@ -68,7 +67,7 @@ const columns = [
   {
     field: "contacts",
     headerName: "Mobile",
-    width: 150,
+    width: 130,
     editable: false,
     headerClassName: "header-color",
   },
@@ -84,15 +83,13 @@ export default function Table() {
   const employeeRecord = data.filter((d) => d.companyId === companyId);
 
   // Find the company based on companyId
-  const company = companyData.find((d) => d.id === companyId);
+  const company = companyData.find((E) => E.id === companyId);
 
   return (
     <>
-      <h1 style={{ width: "100%", margin: "20px auto", textAlign: "center" }}>
-        {company.title}
-      </h1>
+      <h1 style={{ width: "100%", margin: "20px auto", textAlign: "center" }}>{company.title}</h1>
       {employeeRecord && columns && (
-        <Box sx={{ height: "auto", width: "fit-content", margin: "20px auto" }}>
+        <Box sx={{ height: "auto", width: "fit-content", margin: "20px 50px", maxwidth: "80em" }}>
           <DataGrid
             rows={employeeRecord ? employeeRecord : []}
             columns={columns ? columns : []}
@@ -108,7 +105,7 @@ export default function Table() {
             experimentalFeatures={{
               lazyLoading: true,
             }}
-            sx={{ '& .MuiDataGrid-row': { fontSize:'1.1em' } }}
+            sx={{ "& .MuiDataGrid-row": { fontSize: "1.1em" } }}
           />
         </Box>
       )}

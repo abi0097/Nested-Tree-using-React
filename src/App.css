@@ -16,7 +16,7 @@ summary {
   user-select: none;
 }
 .parent-summary::before {
-  content: '\2212'; /* Minus sign when closed */
+  content: "\2212"; /* Minus sign when closed */
   display: inline-block;
   width: 1em;
   margin-right: 5px;
@@ -24,11 +24,11 @@ summary {
 }
 
 .parent.open .parent-summary::before {
-  content: '\002B'; /* Plus sign when open */
+  content: "\002B"; /* Plus sign when open */
 }
 
 .child-summary::before {
-  content: '\2212'; /* Minus sign when closed */
+  content: "\2212"; /* Minus sign when closed */
   display: inline-block;
   width: 1em;
   margin-right: 5px;
@@ -36,11 +36,11 @@ summary {
 }
 
 .child.open .child-summary::before {
-  content: '\002B'; /* Plus sign when open */
+  content: "\002B"; /* Plus sign when open */
 }
 
 .grandchild-summary::before {
-  content: '\2212'; /* Minus sign when closed */
+  content: "\2212"; /* Minus sign when closed */
   display: inline-block;
   width: 1em;
   margin-right: 5px;
@@ -48,7 +48,7 @@ summary {
 }
 
 .grandchild:not(.open) .grandchild-summary::before {
-  content: '\002B'; /* Plus sign when open */
+  content: "\002B"; /* Plus sign when open */
 }
 
 /* Hide arrow head when closed */
@@ -58,10 +58,8 @@ summary {
   display: none;
 }
 
-
-.header-color{
-  color:#000000;
+.header-color {
+  color: #000000;
   background-color: #d2dfff;
   font-size: 1.4em;
 }
-
